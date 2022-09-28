@@ -7,7 +7,7 @@
 
 ### 기존 컨테이너 사용시 문제점
 
-![Untitled](docker%20compose%2062159330980b4b0ab631132252c3dbc5/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/106054507/192779177-eb3df3a8-173a-40f9-9b4a-5e9b9f9eb1d4.png)
 
 ```bash
 (node:1) UnhandledPromiseRejectionWarning: Error: Connection timeout
@@ -27,10 +27,10 @@ PS C:\Users\User\Desktop\docker\code\docker-compose-app> docker-compose up
     - 즉, 서로 다른 컨테이너에 있는데 이렇게 **컨테이너 사이에는 아무런 설정 없이는 접근을 할 수 없기**에 `노드 JS 앱`에서 `레디스 서버`에 접근없음.
 
 ### 도커 Compose 파일 작성
-
-![Untitled](docker%20compose%2062159330980b4b0ab631132252c3dbc5/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/106054507/192779193-1b7f5139-0bce-485b-8224-e6cae0b69a71.png)
 
 ```yaml
+
 version: '3'
 services:
   redis-server:
